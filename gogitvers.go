@@ -71,7 +71,7 @@ func generateBody(hash string, commitID int, statusIsKnown bool, isClean bool) {
 	fmt.Printf("#else\n")
 	fmt.Printf("# define GVGERS_DEBUG        0\n")
 	fmt.Printf("# define GGVERS_FULL_VERSION    \"Commit %d, Hash %s, State:%s\"\n", commitID, hash, cleanliness)
-	fmt.Printf("#endif")
+	fmt.Printf("#endif\n")
 }
 
 func checkIfError(err error) {
